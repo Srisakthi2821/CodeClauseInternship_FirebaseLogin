@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase.js"></script>
+    <script src="app.js"></script>
+    <title>Firebase Authentication</title>
+</head>
+
+<body>
+    <div class="login-container" id="login_container">
+        <h1>Login</h1>
+        <!-- Google Sign-In Button -->
+        <button id="google-login">Login with Google</button>
+
+        <!-- Phone Number Authentication -->
+        <div id="phone-auth">
+            <h2>Mobile Number</h2>
+            <input type="tel" id="phone-number" placeholder="Phone Number">
+            <button id="send-otp">Send OTP</button>
+            <input type="text" id="verification-code" placeholder="Verification Code">
+            <button id="verify-otp">Verify OTP</button>
+        </div>
+    </div>
+    <div class="" align="center" id="userContainer">
+        <img src="https://cdn.pixabay.com/photo/2018/08/28/13/29/avatar-3637561_640.png" class="user_image">
+        <h1 class="userName">User Name: <span id="username"></span></h1>
+        <h1 class="userName">User Email: <span id="userEmail"></span></h1>
+    </div>
+</body>
+
+</html>
